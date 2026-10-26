@@ -1,0 +1,54 @@
+cp __cctempl 
+
+git init && git --allow-empty commit -m "init"
+
+gh auth login
+
+claude --name __project --worktree --permission-mode=bypassPermissions 
+
+/rename >> /resume
+
+clangd-lsp
+
+/statusline context usage bar + worktree + name + agent/task
+
+/model opusplan /effort xhigh /plan 
+
+implement __project. 
+AskUserQuestion || /plan || /grill-me
+
+domain
+technique
+interface
+edge case
+concern
+tradeoff. 
+goal 
+criteria 
+test
+.etc
+
+Don't ask obvious questions, dig into the hard parts and details 
+    of the design tree I might not have considered
+
+Keep interviewing until we've covered everything.
+Then write a complete spec to specs/001-__project/spec.md && git commit -m ".."
+
+/clear 
+
+.claude/rules >> paths: frontmatter
+.claude/settings.json >> permissions allow/ask/deny + hooks (chmod +x, Pre/PostToolUse, Stop) 
+
+/deepsearch  + plansDirectory >> design.md | tasks.json | .etc
+
+claude >> /claude-code-setup || CLAUDE_CODE_NEW_INIT=1 claude >> /init 
+
+/doctor prompt-audit
+
+/agents + /run-skill-generator (/skill-creator) || /ultracode dynamic-workflow 
+
+/sandbox 
+
+/goal use a workflow .. >> /code-review high --fix
+
+gh pr create + claude --from-pr
